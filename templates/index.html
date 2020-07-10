@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>En Route To Safety</title>
+  <link rel="icon" href="{{ url_for('static', filename='erts-logo.png') }}" type="image/png">
+  <style>
+    html {
+    display: table;
+    margin: auto;
+    text-align: center;
+    font-family: fantasy;
+    }
+
+    body {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        font-family: fantasy;
+    }
+  </style>
+</head>
+
+<body style="background-color:grey;">
+<h1 style="font-size:70px;"> <b>Welcome to En Route To Safety! </b></h1>
+<h4 style="font-size:40px;"> Travel COVID-free </h4>
+<h6> <img style="width: 30vw; min-width: 120px;" src="{{ url_for('static', filename='erts-logo.png') }}" alt="En Route To Safety Logo"></h6>
+<p style="font-size:30px;">
+  Please click on the messenger bot at the bottom right corner of the page. 
+</p>
+<p style="font-size:30px;">Message 'Start' anytime to get started!
+</p>
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v7.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="103532528056118"
+  theme_color="#67b868"
+  logged_in_greeting="Hi! How can we help you? Message 'Start' anytime to get started!"
+  logged_out_greeting="Hi! How can we help you? Message 'Start' anytime to get started!">
+      </div>
+
+</body>
+</html>

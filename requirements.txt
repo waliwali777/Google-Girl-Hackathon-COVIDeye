@@ -1,0 +1,8 @@
+requests==2.22.0
+googlemaps==4.4.1
+-e git+https://github.com/Cretezy/pymessenger2.git@940dcac83b3416e4557d52f9f104394b6df39406#egg=pymessenger2
+flask>=1.0.0
+urllib3==1.25.7
+Flask-Classful==0.14.2
+attrs==19.1.0
+gunicorn==20.0.4
